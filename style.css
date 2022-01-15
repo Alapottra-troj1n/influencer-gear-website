@@ -12,7 +12,7 @@
     --main-primary-color: #E02C6D;
     --main-btn-text-color: white;
     --main-rating-color: #FB8200;
-
+    --main-footer-bg-color:#0A0826;
 }
 
 
@@ -46,7 +46,7 @@ li{
 
 
 .container{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 50px;
 }
@@ -112,7 +112,7 @@ li{
 }
 
 .right-side img{
-    width: 444px;
+    width: 40%px;
     text-align: right;
     cursor: pointer;
     
@@ -224,8 +224,8 @@ button:hover{
 
 .product{
     height: 44.90rem;
-    border-radius: 1.3rem;
     width: 34.29rem;
+    border-radius: 1.3rem;
     margin: 1rem 0;
     padding: 2rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -263,61 +263,119 @@ button:hover{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap:1rem;
-    margin-bottom: 10rem;
+    margin-bottom: 1.5rem;
 
 }
 .collection-seemore{
     text-align:right;
+    margin-right: 2.1rem;
+    font-size: 1.1rem;
+    margin-bottom: 15rem;
+    cursor: pointer;
+    color:var(--main-primary-color)
+}
+
+
+/* OPTIONAL SECTION------------------------------------- */
+
+.newsletter{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 15rem ;
+    
+ 
+}
+
+.news-left-side img{
+    width: 70%;
+    border-radius: .7rem;
+}
+.news-right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.news-right-side h2{
+    font-size: 3rem;
+    white-space: nowrap;
+    margin-bottom: .6rem;
+}
+.news-right-side p{
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
 }
 
 
 
 
 
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+}
+
+form #email{
+    width: 40rem;
+    height: 5rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding-left: 2rem;
+    border: 2px solid var(--main-primary-color);
+    border-radius: .7rem;
+   
+    
+    
+    
+}
 
 
+/* FOOTER-SECTION--------------------------------- */
 
+footer{
+    
+    background-color: var(--main-footer-bg-color);
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+    
+    
 
+}
 
+footer h2{
+    font-size: 2.3rem;
+    margin-bottom: .6rem;
+}
+footer p{
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+.social-icons{
+    display: flex;
+    justify-content:center;
 
+}
+.icon{
+   padding: .3rem;
+   background-color: #22213C;
+   border-radius: 50rem;
+   margin: 0 .5rem;
+   cursor: pointer;
 
+}
+.icon i{
+    font-size:2rem;
+    margin:1rem 1rem;
+    
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.icon:hover{
+    color: var(--main-primary-color);
+    transition: 200ms ease-in-out;
+}
 
 
 
@@ -333,18 +391,95 @@ button:hover{
 /*---------------------- MOBILE RESPONSIVE ---------------------------------------*/
 
 
-@media (max-width: 700px){
+@media (max-width: 768px){
+    .main-nav{
+        flex-direction: column;
+        height: 100%;
+        padding:3rem 0;
+        margin-bottom: 2rem;
+    }
+    .navlinks{
+        flex-direction: column;
+        font-size: 3rem;
+        text-align:center;
 
+        margin: 2rem 0;
+    }
+    .logo{
+        font-size:3rem;
+    }
+
+    .navlinks li{
+        padding: 1rem 0;
+    }
+    .herosection{
+        flex-direction:column-reverse;
+        background-position: top center;
+    }
+    .left-side{
+        margin-top:2.5rem;
+    }
     .companies{
         flex-direction: column;
         justify-content:center;
         align-items:center;
+        margin: 1.5rem 0;
         
     }
     .company-logo{
-        margin: 0;
+        margin: 1.5rem 0;
     }
+
+    /* ----------------MOBILE GRID */
+
+    .collection{
+        grid-template-columns: 1fr;
+    }
+    .product{
+        margin: 1rem auto;
+
+    }
+    .collection-seemore{
+        text-align:center;
+    }
+    .newsletter{
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+    .news-left-side img{
+        width: 60%;
+
+        
+    }
+
+    .news-left-side{
+        display:flex;
+        align-items: center;
+        justify-content:center;
+    }
+    .news-right-side{
+        text-align: center;
+
+    }
+    .news-right-side h2{
+        margin-top: 1rem;
+    }
+    .news-right-side p{
+        margin-bottom: 1.5rem;
+    }
+    form{
+        align-items: center;
+    }
+    form #email{
+        width: 35rem;
+    }
+
+
+
 }
+
+
+
 
 
 
