@@ -400,13 +400,15 @@ footer p{
     }
     .navlinks{
         flex-direction: column;
-        font-size: 3rem;
+        font-size: 2rem;
         text-align:center;
 
         margin: 2rem 0;
     }
     .logo{
-        font-size:3rem;
+        font-size:2rem;
+        text-align: center;
+        white-space: nowrap;
     }
 
     .navlinks li{
@@ -415,9 +417,23 @@ footer p{
     .herosection{
         flex-direction:column-reverse;
         background-position: top center;
+        background-size: 100%;
+      
+    }
+
+    .left-side h1{
+        font-size: 5rem;
+        line-height: 6rem;
+        text-align: center;
     }
     .left-side{
         margin-top:2.5rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .right-side img{
+        width: 100%;
     }
     .companies{
         flex-wrap: wrap;
@@ -429,6 +445,7 @@ footer p{
     .company-logo{
         margin: 1.5rem 1.5rem;
     }
+    
 
     /* ----------------MOBILE GRID */
 
@@ -451,7 +468,7 @@ footer p{
         margin-bottom: 5rem;
     }
     .news-left-side img{
-        width: 60%;
+        width: 100%;
 
         
     }
@@ -467,6 +484,8 @@ footer p{
     }
     .news-right-side h2{
         margin-top: 1rem;
+        font-size: 2rem;
+        white-space:wrap;
     }
     .news-right-side p{
         margin-bottom: 1.5rem;
