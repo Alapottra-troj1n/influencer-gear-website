@@ -420,14 +420,14 @@ footer p{
         margin-top:2.5rem;
     }
     .companies{
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content:center;
         align-items:center;
-        margin: 1.5rem 0;
+        margin: 1.5rem 0rem;
         
     }
     .company-logo{
-        margin: 1.5rem 0;
+        margin: 1.5rem 1.5rem;
     }
 
     /* ----------------MOBILE GRID */
@@ -442,6 +442,10 @@ footer p{
     .collection-seemore{
         text-align:center;
     }
+
+
+    /* OPTIONAL */
+
     .newsletter{
         flex-direction: column;
         margin-bottom: 5rem;
@@ -478,6 +482,83 @@ footer p{
 
 }
 
+
+/* TABLET RESPONSVE ------------------------------ */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .herosection{
+        flex-direction:column-reverse;
+        background-position: top center;
+    }
+    .right-side{
+        margin-bottom: 5rem;
+    }
+
+    .companies{
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items:center;
+        margin: 1.5rem 0rem;
+        
+    }
+    .company-logo{
+        margin: 1.5rem 1.5rem;
+    }
+    .logo{
+        font-size: 1.8rem;
+    }
+
+
+    /* -----------TABLET GRID---------- */
+
+    .collection{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .product{
+        margin: 1.5rem auto;
+    }
+
+
+
+    /* OPTIONAL */
+
+    .newsletter{
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+    .news-left-side img{
+        width: 60%;
+
+        
+    }
+
+    .news-left-side{
+        display:flex;
+        align-items: center;
+        justify-content:center;
+    }
+    .news-right-side{
+        text-align: center;
+
+    }
+    .news-right-side h2{
+        margin-top: 1rem;
+    }
+    .news-right-side p{
+        margin-bottom: 1.5rem;
+    }
+    form{
+        align-items: center;
+    }
+    form #email{
+        width: 35rem;
+    }
+
+
+
+
+}
 
 
 
